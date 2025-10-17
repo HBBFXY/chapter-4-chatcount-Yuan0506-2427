@@ -4,7 +4,7 @@ digit_count = 0
 space_count = 0
 other_count = 0
 for char in s:
-    if char.isalpha() and char.isascii():
+    if char.isalpha():
         letter_count += 1
     elif char.isdigit():
         digit_count += 1
