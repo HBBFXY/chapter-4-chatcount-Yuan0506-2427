@@ -3,9 +3,7 @@ letter_count = 0
 digit_count = 0
 space_count = 0
 other_count = 0
-
 for char in s:
-    # 只统计 ASCII 英文字母作为“英文字符”
     if char.isalpha() and char.isascii():
         letter_count += 1
     elif char.isdigit():
@@ -14,7 +12,6 @@ for char in s:
         space_count += 1
     else:
         other_count += 1
-
 print("英文字符:", letter_count)
 print("数字:", digit_count)
 print("空格:", space_count)
